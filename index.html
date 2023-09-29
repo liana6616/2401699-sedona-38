@@ -7,11 +7,9 @@
   <body>
     <header data-test="header" class="main-header">
      <nav class="main-nav">
-     <ul class="site-navigation-item">
       <a class="logo" href="index.html" aria-current="page">
        <img src="#" alt="Логотип города Седона">
       </a>
-    </ul>
       <ul class="site-navigation">
         <li class="site-navigation-item">
           <a class="navigation-link" href="#">Главная</a>
@@ -36,13 +34,12 @@
           <a class="navigation-link" href="#">Хочу сюда!</a>
     </header>
     <main data-test="main" class="main">
-      <img src="#" alt="Welcome to the gorgeous Sedona , because the Grand Canyon sucks!">
-      </section>
-      <h1 class="visually-hidden"></h1>
         <section data-test="hero" class="hero">
-        <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-        <p class="about">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-      </section>
+          <img src="#" alt="Welcome to the gorgeous Sedona , because the Grand Canyon sucks!">
+          <h1 class="visually-hidden">Седона городок</h1>
+              <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+              <p class="about">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        </section>
       <section data-test="advantages" class="advantages">
       <ul class="advantages-list">
           <li class="advantages-item">
@@ -90,20 +87,20 @@
           <button class="button" type="submit">Поиск гостиницы в Седоне</button>
         </form>
       </section>
-      <section data-test="subcribe" class="subcribe">
-        <h2 class="page-main-title">Подпишитесь на рассылку</h2>
-        <p class="advantages-descripsion">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="subscribe-form" action="#" method="post">
-          <label for="subscribe-email"></label>
-          <input class="field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
-          <button class="button subscribe-button" type="submit">Подписаться
-          </button>
+      <section class="subscription" data-test="subscribe">
+        <h2 class="visually-hidden">Рассылка</h2>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <p>Подпишитесь на рассылку</p>
+          <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <label for="newsletter-email" hidden>Email</label>
+          <input class="field" type="email" placeholder="Ваш e-mail" name="newsletter-email" id="newsletter-email"
+                 required>
+          <input type="submit" value="Подписаться">
         </form>
       </section>
       </main>
     <footer data-test="footer" class="footer">
-      <section class="footer-social">
-       <ul class="footer-social-list">
+      <div class="footer-social">
         <li class="footer-social-item">
           <a class="button" href="vk.png">
           <span class="visually-hidden">ВКонтакте</span>
@@ -127,7 +124,7 @@
             <img class="present" src="#" alt="Логотип академии">
           </a>
         </nav>
-      </ul>
-    </section>
+      </div>
+    </footer>
   </body>
 </html>
