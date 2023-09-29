@@ -45,6 +45,7 @@
             </ul>
           </header>
           <section class="filter">
+            <img src="images/catalog/filter.png" width="1200" height="412" alt="Фоновая картинка гор.">
             <h2 class="visually-hidden" hidden>Блок фильтров</h2>
               <form class="form-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset data-test="filter" class="filter">
@@ -103,19 +104,25 @@
                 <legend class="search-filter-title">Стоимость, ₽:</legend>
               <form>
               <label for="price" hidden></label>
-            <input class="field" type="price" placeholder="от" name="price" id="price" required>
-            <input class="field" type="price" placeholder="до" name="price" id="price" required>
+            <input class="field" type="price" placeholder="от" name="price" id="price" value="0" required>
+            <input class="field" type="price" placeholder="до" name="price" id="price" value="9000" required>
           </form>
         </fieldset>
       </section>
-    </form>
-              <button class="button" type="submit">Применить</button>
-              <button class="button" type="submit">Сбросить</button>
+      <div class="button-price">
+        <button class="button" type="submit"></button>
+        <button class="button" type="submit"></button>
+      </div>
+      <div class="button-filter">
+        <button class="button" type="submit">Применить</button>
+        <button class="button" type="submit">Сбросить</button>
+      </div>
+          </form>
       <section class="search-filter>
         <h2 class="inner-header-title">Найдено гостиниц: 38</h2>
        <select class="sorting">
-          <option value="popular">Сначала популярное</option>
           <option value="cheap">Сначала дешёвое</option>
+          <option value="popular">Сначала популярное</option>
           <option value="expensive">Сначала дорогое</option>
         </select>
         <a class="button" href="#">
