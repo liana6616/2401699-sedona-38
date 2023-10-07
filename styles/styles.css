@@ -150,7 +150,7 @@
   font-weight: 700;
   line-height: 36px;
 }
-.subscribe-title-text {
+.subscribe-title-light {
   color: #ffffff;
   font-family: "PT Sans";
   font-size: 22px;
@@ -180,8 +180,32 @@
 }
 /* 2стр */
 .filter-under {
-  background: url("../images/mountains.jpg");
+  background:  url("../images/catalog/filter.png");
   background-repeat: no-repeat;
+}
+.inner-header-title {
+  color: #FFF;
+  font-family: "PT Sans";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 78px;
+}
+.breadcrumbs-link {
+  background-image: url("../images/catalog/breadcrumbs.svg");
+  background-repeat: no-repeat;
+}
+.bread-crumbs {
+  background-image: url("../images/catalog/breadcrumbs.png");
+  background-repeat: no-repeat;
+}
+.breadcrumb-link {
+  color: #FFF;
+  font-family: "PT Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
 }
 .search-filter-title {
   color: #FFF;
@@ -359,6 +383,11 @@
   background: #82B3D3;
   width: 60px;
   height: 60px;
+}
+.subscribe {
+  background-image: url("../images/subscribe.png");
+  background-size: cover contain;
+  background-repeat: no-repeat;
 }
 .subscribe-title-dark {
   font-family: "PT Sans";
