@@ -2,7 +2,7 @@
   font-family: "PT sans";
   font-style: normal;
   font-weight: 400;
-  src: url(".../fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT sans";
   font-style: normal;
   font-weight: 700;
-  src: url(".../fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -24,7 +24,6 @@
   background-color: #ffffff;
 }
 .navigation-link-like {
-  font-family: "PT Sans";
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
@@ -37,7 +36,6 @@
   background: #7DB54F;
   }
 .navigation-link-button button {
-  font-family: "PT Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -49,7 +47,6 @@
 }
 
 .main-nav {
-  font-family: "PT Sans";
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -61,7 +58,6 @@
   background: url("../images/mountains.jpg");
   background-size: cover contain;
   background-repeat: no-repeat;
-  font-family: "PT Sans";
   background-position: auto ;
   font-weight: 700;
   font-size: 30px;
@@ -69,13 +65,11 @@
 }
 
 .about {
-  font-family: "PT Sans";
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
 }
 .advantages h2 {
-  font-family: "PT Sans";
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -84,13 +78,11 @@
 
 .advantages h3 {
   font-size: 24px;
-  font-family: "PT Sans";
   font-weight: 700;
   text-transform: uppercase;
   line-height: 28px;
 }
 .about {
-  font-family: PT Sans;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -98,7 +90,6 @@
 }
 .advantages p {
   font-size: 18px;
-  font-family: "PT Sans";
   font-weight: 400;
   line-height: 21px;
 }
@@ -130,21 +121,18 @@
   background: #756157;
 }
 .page-main-title {
-  font-family: "PT Sans";
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
   line-height: 36px;
 }
 .advantages-descripsion {
-  font-family: "PT Sans";
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
 }
 .subscribe-title {
   color: #ffffff;
-  font-family: "PT Sans";
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -152,7 +140,6 @@
 }
 .subscribe-title-light {
   color: #ffffff;
-  font-family: "PT Sans";
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
@@ -185,7 +172,6 @@
 }
 .inner-header-title {
   color: #FFF;
-  font-family: "PT Sans";
   font-size: 60px;
   font-style: normal;
   font-weight: 700;
@@ -201,7 +187,6 @@
 }
 .breadcrumb-link {
   color: #FFF;
-  font-family: "PT Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -209,7 +194,6 @@
 }
 .search-filter-title {
   color: #FFF;
-  font-family: "PT Sans";
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -218,7 +202,6 @@
 }
 .earch-filter-item {
   color: #FFF;
-  font-family: "PT Sans";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -227,7 +210,6 @@
 }
 .field {
   color: #000000;
-  font-family: "PT Sans";
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -241,7 +223,6 @@
 .button-dark {
   color: #FFF;
   text-align: center;
-  font-family: "PT Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -255,7 +236,6 @@
 .button-light {
   color: #FFF;
   text-align: center;
-  font-family: "PT Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -266,23 +246,12 @@
   border-radius: 4px;
   background:  transparent;
 }
-/*не работает ниже*/
-.inner-header {
-  color: #000;
-  font-family: "PT Sans";
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 36px;
-  text-transform: uppercase;
-}
 .sorting {
   width: 292px;
   height: 49px;
   border-radius: 4px;
   border: 2px;
   color:#333;
-  font-family: "PT Sans";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -302,7 +271,6 @@
 }
 .catalog-card-title {
   color:#000;
-  font-family: "PT Sans";
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -311,7 +279,6 @@
 .catalog-card-button-details {
   color:#FFF;
   text-align: center;
-  font-family: "PT Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -324,7 +291,6 @@
 .catalog-card-button-favorites {
   color:#FFF;
   text-align: center;
-  font-family: "PT Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -337,7 +303,6 @@
 .catalog-card-button-favorite {
   color:#FFF;
   text-align: center;
-  font-family: "PT Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -348,7 +313,6 @@
   padding: 8px 50px;
 }
 .catalog-card-button {
-  font-family: "PT Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -360,8 +324,6 @@
 }
 .pagination-current-one {
   color:#000;
-  text-align: center;
-  font-family: "PT Sans";
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -373,7 +335,6 @@
 .pagination-current {
   color: #ffffff;
   text-align: center;
-  font-family: "PT Sans";
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -390,14 +351,12 @@
   background-repeat: no-repeat;
 }
 .subscribe-title-dark {
-  font-family: "PT Sans";
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
   line-height: 36px;
 }
 .subscribe-title-text-dark {
-  font-family: "PT Sans";
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
