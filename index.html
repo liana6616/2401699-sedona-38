@@ -35,15 +35,11 @@
           <a class="navigation-link-button" href="#"><button>Хочу сюда!</button></a>
     </header>
     <main data-test="main" class="main">
+      <div class="fond">
+        <img src="images/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona , because the Grand Canyon sucks!"></div>
         <section data-test="hero" class="hero">
-          <div class="hero-background">
-          <img src="images/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona , because the Grand Canyon sucks!">
-          <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="57" viewBox="0 0 1200 57" fill="none">
-            <path d="M0 57V0L250 24V0L600 57L950 0V24L1200 0V57H0Z" fill="white"/>
-            </svg></div>
-          <h1 class="visually-hidden">Седона городок</h1>
-              <p class="hero">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-              <p class="about">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          <h1 class="about">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+            <p class="subject">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </section>
       <section data-test="advantages" class="advantages">
       <ul class="advantages-list">
@@ -95,15 +91,16 @@
           <button class="button" type="submit">Поиск гостиницы в Седоне</button>
         </form>
       </section>
+      <img src="#" width="1200" height="414.86" alt="Фон для подписки на рассылку.">
       <section class="subscribe" data-test="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-        <img src="#" width="1200" height="414.86" alt="Фон для подписки на рассылку.">
+        <p class="subscribe-title-light">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" method="post">
-          <p class="subscribe-title-light">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="subscribe-form-name">
           <label for="newsletter-email" hidden>Email</label>
           <input class="field" type="email" placeholder="Ваш e-mail" name="newsletter-email" id="newsletter-email"
-                 required>
-          <input type="submit" value="Подписаться">
+                 required></p>
+          <button class="subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
       </main>

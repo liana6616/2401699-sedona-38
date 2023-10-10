@@ -34,11 +34,13 @@
     </nav>
           <a class="navigation-link-button" href="#"><button>Хочу сюда!</button></a>
     </header>
+    <div class="header-catalog">
+      <img src="#" width="1200" height="414" alt="Фоновая картинка гор.">
         <main data-test="main" class="main-catalog">
             <h1 class="inner-header-title">Гостиницы Седона</h1>
               <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="index.html"></a>
+                <a class="breadcrumbs-link-home" href="index.html"></a>
               </li>
                 <p class="bread-crumbs"></p>
               <li class="breadcrumbs-item">
@@ -47,7 +49,6 @@
             </ul>
           </header>
           <section class="filter-under">
-            <img src="#" width="1200" height="412" alt="Фоновая картинка гор.">
             <h2 class="visually-hidden" hidden>Блок фильтров</h2>
               <form class="form-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset data-test="filter" class="filter">
@@ -55,14 +56,15 @@
                    <ul class="search-filter-list">
                     <li class="earch-filter-item">
                       <label class="control">
-                      <input class="control-input" type="checkbox" name="pool">
+                      <input class="control-input" type="checkbox" name="pool" checked>
 
                       Бассейн
                      </label>
                   </li>
                   <li class="earch-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="parking">
+                      <input class="control-input" type="checkbox" name="parking" checked>
+
 
                       Паркинг
                     </label>
@@ -81,7 +83,7 @@
                   <ul class="search-filter-list">
                     <li class="earch-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="type of housing" value="hostel">
+                      <input class="control-input" type="radio" name="type of housing" value="hostel" checked>
 
                       Гостиница
                     </label>
@@ -105,9 +107,10 @@
               <fieldset class="search-filter-group">
                 <legend class="search-filter-title">Стоимость, ₽:</legend>
               <form>
-              <label for="price" hidden></label>
-            <input class="field" type="price" placeholder="от" name="price" id="price" value="0" required>
-            <input class="field" type="price" placeholder="до" name="price" id="price" value="9000" required>
+              <label for="price" hidden>от</label>
+            <input class="field" type="price" name="price" value="0" required>
+            <label for="price" hidden>до</label>
+            <input class="field" type="price" name="price" value="9000" required>
           </form>
         </fieldset>
       <div class="button-price">
@@ -120,10 +123,10 @@
       </div>
           </form>
         </section>
-      <section class="search-filter>
+      <section class="search-filter">
         <h2 class="inner-header">Найдено гостиниц: 38</h2>
        <select class="sorting">
-          <option value="cheap">Сначала дешёвое</option>
+          <option value="cheap">Сначала дешёвые</option>
           <option value="popular">Сначала популярное</option>
           <option value="expensive">Сначала дорогое</option>
         </select>
@@ -159,6 +162,7 @@
             </svg>
         </a>
       </section>
+    </div>
         <section data-test="catalog" class="catalog">
         <ul class="catalog-list">
           <li class="catalog-card">
@@ -177,7 +181,7 @@
               <img class="visually-rating" width="18" height="17" src="images/catalog/star.svg"></a>
 
             </div>
-            <a class="catalog-card-button" href="#">Рейтинг: 8,5</a>
+            <a class="rating-result" href="#">Рейтинг: 8,5</a>
           </li>
         </ul>
             <ul class="catalog-list">
@@ -196,7 +200,7 @@
                   <img class="visually-rating" width="18" height="17" src="images/catalog/star.svg"></a>
                   <img class="visually-rating" width="18" height="17" src="images/catalog/star.svg"></a>
                 </div>
-                <a class=catalog-card-button" href="#">Рейтинг: 9,2</a>
+                <a class="rating-result" href="#">Рейтинг: 9,2</a>
               </li>
             </ul>
                 <ul class="catalog-list">
@@ -214,7 +218,7 @@
                       <img class="visually-rating" width="18" height="17" src="images/catalog/star.svg"></a>
                       <img class="visually-rating" width="18" height="17" src="images/catalog/star.svg" ></a>
                     </div>
-                    <a class="catalog-card-button" href="#">Рейтинг: 6,9</a>
+                    <a class="rating-result" href="#">Рейтинг: 6,9</a>
                   </li>
                 </ul>
                 <ul class="catalog-list">
@@ -231,7 +235,7 @@
                       <img class="visually-rating" width="18" height="17" src="images/catalog/star.svg"  alt="Двухзвездочный отель."></a>
                       <img class="visually-rating" width="18" height="17" src="images/catalog/star.svg"></a>
                     </div>
-                    <a class="catalog-card-button" href="#">Рейтинг: 6,9</a>
+                    <a class="rating-result" href="#">Рейтинг: 6,9</a>
                   </li>
                 </ul>
           <ul class="pagination">
@@ -261,14 +265,14 @@
           </ul>
         </section>
         <section class="subscription-two" data-test="subscribe">
-          <h2 class="subscribe-title">Рассылка</h2>
+          <h2 class="subscribe-title-link">Подпишитесь на рассылку</h2>
           <form action="https://echo.htmlacademy.ru/" method="post">
-            <p class="subscribe-title-dark">Подпишитесь на рассылку</p>
-            <p clas="subscribe-title-text-dark">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <p clas="subscribe-title-dark">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <p class="subscribe-form-name">
             <label for="newsletter-email" hidden>Email</label>
             <input class="field" type="email" placeholder="Ваш e-mail" name="newsletter-email" id="newsletter-email"
-                   required>
-            <input type="submit" value="Подписаться">
+                   required></p>
+            <button class="subscribe-button" type="submit">Подписаться</button>
           </form>
         </section>
   </main>
