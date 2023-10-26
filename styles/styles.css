@@ -599,7 +599,8 @@ body {
   display: flex;
 }
 .modal-container {
-  position: fixed;
+  z-index: 1000;
+  position: absolute;
 }
 
 
@@ -745,8 +746,41 @@ fieldset {
   padding: 0;
   opacity: 0.3;
 }
+.control {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.control-input:checked + .control-input::before {
+  background-image: url("../images/catalog/alternative.svg");
+}
 .control-input {
   margin: 0;
+  appearance: none;
+}
+.control-input::before {
+  content: "";
+  border-radius: 4px;
+  background: #FFF;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+}
+.control-input-list {
+  margin: 0;
+  appearance: none;
+}
+.control-input-list::before {
+  content: "";
+  border-radius: 10px;
+  background: #FFF;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
 }
 .earch-filter-item:hover {
   opacity: 0.6;
@@ -933,7 +967,7 @@ fieldset {
 .button-light:disabled {
   opacity: 0.1;
 }
-.sorting {
+select {
   border-radius: 4px;
   border: 2px solid #E5E5E5;
   font-size: 18px;
@@ -948,8 +982,7 @@ fieldset {
   align-items: center;
   box-sizing: border-box;
   appearance: none;
-  background-image: url("../images/catalog/sorting.svg");
-  background-repeat: no-repeat;
+  background: url("../images/catalog/sorting.svg") no-repeat right;
 }
 .sorting:hover {
   border: 2px solid #68A2CA;

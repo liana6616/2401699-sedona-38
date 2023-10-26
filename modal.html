@@ -68,6 +68,7 @@
             <fieldset data-test="filter" class="filter">
               <legend class="search-filter-title">Инфраструктура</legend>
               <ul class="search-filter-list">
+
                 <li class="earch-filter-item">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="pool" checked>
@@ -97,21 +98,21 @@
               <ul class="search-filter-list">
                 <li class="earch-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="type of housing" value="hostel" checked>
+                    <input class="control-input-list" type="radio" name="type of housing" value="hostel" checked>
 
                     Гостиница
                   </label>
                 </li>
                 <li class="earch-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="type of housing" value="motel">
+                    <input class="control-input-list" type="radio" name="type of housing" value="motel">
 
                     Мотель
                   </label>
                 </li>
                 <li class="earch-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="type of housing" value="apartaments">
+                    <input class="control-input-list" type="radio" name="type of housing" value="apartaments">
 
                     Апартаменты
                   </label>
@@ -121,15 +122,20 @@
             <fieldset class="search-filter-group">
               <legend class="search-filter-title">Стоимость, ₽:</legend>
               <div class="fix-price">
-                <label for="price_do">от</label>
-                <input class="field" type="text" name="price" value="0" id="price_do" required>
-                <label for="price_of">до</label>
-                <input class="field" type="text" name="price" value="9000" id="price_of" required>
+                <div class="price-one">
+                <label class="do">от</label>
+                <input class="field-do" type="text" name="price" value="0" id="price_do" required>
+              </div>
+                <div class="price-two">
+                <label class="of">до</label>
+                <input class="field-of" type="text" name="price" value="9000" id="price_of" required>
+                </div>
               </div>
               <div class="button-price">
                 <button class="button" type="submit"></button>
                 <button class="button-two" type="submit"></button>
               </div>
+              <div class="button-price-inactively"></div>
             </fieldset>
             <div class="button-filter">
               <button class="button button-dark" type="button">Применить</button>
@@ -186,6 +192,7 @@
                   alt="Звездное небо сквозь пещеру.">
                 <h3 class="catalog-card-title">Amara Resort & Spa</h3>
               </a>
+              <div class="option">
               <p class="price-name">Гостиница</p>
               <p class="price-from">От 4000 ₽</p>
               <a class="catalog-card-button-details" href="#">Подробнее</a>
@@ -198,6 +205,7 @@
                 <img class="visually-rating" width="18" height="17" src="images/catalog/star.svg">
               </div>
               <a class="rating-result" href="#">Рейтинг: 8,5</a>
+              </div>
             </li>
             <li class="catalog-card">
               <a class="catalog-card-link" href="catalog.html">
@@ -205,6 +213,7 @@
                   alt="Радуга на небе.">
                 <h3 class="catalog-card-title">Villas at Poco Diablo</h3>
               </a>
+              <div class="option">
               <p class="price-name">Гостиница</p>
               <p class="price-from">От 5000 ₽</p>
               <a class="catalog-card-button-details" href="#">Подробнее</a>
@@ -217,6 +226,7 @@
                 <img class="visually-rating" width="18" height="17" src="images/catalog/star.svg">
               </div>
               <a class="rating-result" href="#">Рейтинг: 9,2</a>
+              </div>
             </li>
             <li class="catalog-card">
               <a class="catalog-card-link" href="catalog.html">
@@ -224,6 +234,7 @@
                   alt="Утро в горах.">
                 <h3 class="catalog-card-title"> Desert Quail Inn</h3>
               </a>
+              <div class="option">
               <p class="price-name">Гостиница</p>
               <p class="price-from">От 2500 ₽</p>
               <a class="catalog-card-button-details" href="#">Подробнее</a>
@@ -235,6 +246,7 @@
                 <img class="visually-rating" width="18" height="17" src="images/catalog/star.svg">
               </div>
               <a class="rating-result" href="#">Рейтинг: 6,9</a>
+              </div>
             </li>
             <li class="catalog-card">
               <a class="catalog-card-link" href="catalog.html">
@@ -242,6 +254,7 @@
                   alt="Горы на фоне звездного неба.">
                 <h3 class="catalog-card-title"> GreenTree Inn</h3>
               </a>
+              <div class="option">
               <p class="price-name">Гостиница</p>
               <p class="price-from">От 1500 ₽</p>
               <a class="catalog-card-button-details" href="#">Подробнее</a>
@@ -252,6 +265,7 @@
                 <img class="visually-rating" width="18" height="17" src="images/catalog/star.svg">
               </div>
               <a class="rating-result" href="#">Рейтинг: 6,9</a>
+              </div>
             </li>
           </ul>
           <ul class="pagination">
