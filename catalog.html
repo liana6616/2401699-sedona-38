@@ -72,6 +72,7 @@
                 <li class="earch-filter-item">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="pool" checked>
+                    <span class="alternative"></span>
 
                     Бассейн
                   </label>
@@ -79,6 +80,7 @@
                 <li class="earch-filter-item">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="parking" checked>
+                    <span class="alternative"></span>
 
 
                     Паркинг
@@ -87,6 +89,7 @@
                 <li class="earch-filter-item">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="wi-fi">
+                    <span class="alternative"></span>
 
                     Wi-FI
                   </label>
@@ -98,7 +101,8 @@
               <ul class="search-filter-list">
                 <li class="earch-filter-item">
                   <label class="control">
-                    <input class="control-input-list" type="radio" name="type of housing" value="hostel" checked>
+                    <input class="visually-hidden control-input-list" type="radio" name="type of housing" value="hostel" checked>
+                    <span class="tick"></span>
 
                     Гостиница
                   </label>
@@ -106,6 +110,7 @@
                 <li class="earch-filter-item">
                   <label class="control">
                     <input class="control-input-list" type="radio" name="type of housing" value="motel">
+                    <span class="tick"></span>
 
                     Мотель
                   </label>
@@ -113,6 +118,7 @@
                 <li class="earch-filter-item">
                   <label class="control">
                     <input class="control-input-list" type="radio" name="type of housing" value="apartaments">
+                    <span class="tick"></span>
 
                     Апартаменты
                   </label>
@@ -132,10 +138,10 @@
                 </div>
               </div>
               <div class="button-price">
-                <button class="button" type="submit"></button>
+                <button class="button-min" type="submit"></button>
                 <button class="button-two" type="submit"></button>
+                <div class="range"></div>
               </div>
-              <div class="button-price-inactively"></div>
             </fieldset>
             <div class="button-filter">
               <button class="button button-dark" type="button">Применить</button>
