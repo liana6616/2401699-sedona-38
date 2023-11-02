@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon/favicon.ico">
   </head>
 
   <body>
@@ -21,7 +22,7 @@
             <li class="site-navigation-item">
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
-            <li class="site-navigation-item">
+            <li class="site-navigation-item  item-navigation">
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
@@ -37,17 +38,15 @@
         </nav>
       </header>
       <main data-test="main" class="main-container main">
-        <section class="fond">
+        <section class="hero">
           <img src="images/welcome.svg" width="458" height="352"
             alt="Welcome to the gorgeous Sedona , because the Grand Canyon sucks!">
         </section>
-        <section data-test="hero" class="hero">
-          <h2 class="title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <p class="subject">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-        </section>
-        <section class="indent">
-        </section>
         <section data-test="advantages" class="advantages">
+          <div class="indent">
+          <h2 class="title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <h4 class="subject">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</h4>
+        </div>
           <ul class="advantages-list">
             <li class="advantages-item-block">
               <h3 class="advantages-title-block">Настоящий городок</h3>
@@ -66,41 +65,42 @@
               <h3 class="advantages-title">Мало туристов</h3>
               <p class="advantages-descripsion">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
+            <img class="photo" src="images/crag.jpg" alt="Фото моста Дьявола города Седона.">
             <li class="advantages-item-block">
-              <h3 class="advantages-title-block">Там есть мост Дьявола</h3>
+              <h3 class="advantages-title-block">Там есть <br> мост Дьявола</h3>
               <p class="advantages-descripsion-block">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </li>
-            <img class="photo" src="images/crag.jpg" alt="Фото моста Дьявола города Седона.">
           </ul>
-          <div class="reason">
-            <li class="advantage">
-              <h2 class="title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-              <p class="about">Опытный персонал и качественное обслуживание!</p>
-            </li>
-          </div>
+        </section>
+        <section data-test="service" class="service">
+
           <ul class="advantages-list">
+            <li class="advantage">
+              <h2 class="advantage-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+              <h4 class="advantage-cause">Опытный персонал и качественное обслуживание!</h4>
+            </li>
             <li class="advantages-item-block3">
-              <img src="images/home.svg" width="75" height="72" alt="Изображение дома.">
-              <h3 class="advantages-titles">Жилье</h3>
-              <p class="advantages-descripsions">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <img src="images/home.svg" width="75" height="76" alt="Изображение дома.">
+              <h3 class="advantages-titles">Жильё</h3>
+              <p class="advantages-descripsions">Рекомендуем пожить <br> в настоящем мотеле, <br> всё как в кино!</p>
             </li>
             <li class="advantages-item-block2">
-              <img src="images/food.svg" width="74" height="70" alt="Изображение бургера.">
+              <img src="images/food.svg" width="75" height="76" alt="Изображение бургера.">
               <h3 class="advantages-titles">Еда</h3>
-              <p class="advantages-descripsions">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              <p class="advantages-descripsions">Всегда заказывайте <br> топовый фирменный бургер, <br> вы не разочаруетесь!</p>
             </li>
             <li class="advantages-item-block3">
-              <img src="images/present.svg" width="64" height="76" alt="Изображение подарка.">
+              <img src="images/present.svg" width="75" height="76" alt="Изображение подарка.">
               <h3 class="advantages-titles">Сувениры</h3>
-              <p class="advantages-descripsions">Не только китайского, но и настоящего местного производства!</p>
+              <p class="advantages-descripsions">Не только китайского, <br> но и настоящего местного <br> производства!</p>
             </li>
           </ul>
         </section>
         <section data-test="search" class="search">
           <h2 class="page-main-title">Заинтересовались?</h2>
-          <p class="advantages-descripsion-search">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие
-            предложения гостиниц в Седоне</p>
-            <a class="button-link" href="modal.html">Поиск гостиницы в Седоне</a>
+          <h3 class="advantages-descripsion-search">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие
+            предложения гостиниц в Седоне</h3>
+          <a class="button-link" href="modal.html">Поиск гостиницы в Седоне</a>
         </section>
         <section class="subscribe" data-test="subscribe">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
@@ -108,8 +108,8 @@
           <form action="https://echo.htmlacademy.ru/" method="post" class="email">
             <p class="subscribe-form-name">
               <label for="newsletter-email" hidden>Email</label>
-              <input class="field-email" type="email" placeholder="Ваш e-mail" name="newsletter-email" id="newsletter-email"
-                required>
+              <input class="field-email" type="email" placeholder="Ваш e-mail" name="newsletter-email"
+                id="newsletter-email" required>
             </p>
             <button class="subscribe-button" type="submit">Подписаться</button>
           </form>
@@ -146,10 +146,10 @@
           </li>
         </ul>
         <address class="footer-contacts-address">
-          <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 812 812-12-12</a>
+          <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-          <svg xmlns="http://www.w3.org/2000/svg" width="115" height="34" viewBox="0 0 115 34" fill="none">
+          <svg xmlns="http://www.w3.org/2000/svg" width="115" height="36" viewBox="0 0 115 34" fill="none">
             <path d="M0 13.2564V15.8564H2.5V13.2564H0Z" fill="black" />
             <path
               d="M11.6 4.85645C10 4.85645 8.8 5.55645 8 6.55645H7.9V0.356445H5.9V15.8564H7.9V10.5564C7.9 8.45645 9.2 6.95645 11.2 6.95645C13 6.95645 14.1 8.35645 14.1 10.1564V15.8564H16.1V9.75644C16.2 6.75644 14.3 4.85645 11.6 4.85645Z"
@@ -189,7 +189,7 @@
       </footer>
     </div>
     <div class="modal-container">
-      <div class="modal modal-auth">
+      <div class="modal modal-auth" data-test="modal">
         <button class="modal-close-button" type="submit">
           <span class="visually-hidden">Закрыть</span>
         </button>
@@ -198,8 +198,8 @@
           <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="appointment-form-date">
 
-                <label class="form-label" for="appointment">
-                  Дата Заезда:</label>
+              <label class="form-label" for="appointment">
+                Дата Заезда:</label>
 
 
               <input class="departure" type="text" id="appointment" name="appointment-date" value="27 апреля 2020">
@@ -211,47 +211,44 @@
                 Дата Выезда:</label>
 
 
-            <input class="arrival-day" type="text" id="appointment-date" name="appointment-date" value="01 сентября 2023">
-          </p>
-          <p class="help">На эти даты есть свободные номера. Пока есть.</p>
+              <input class="arrival-day" type="text" id="appointment-date" name="appointment-date"
+                value="1 сентября 2023">
+            </p>
+            <p class="help">На эти даты есть свободные номера. Пока есть.</p>
           </form>
-          <form class="amount">
+          <form class="amount" method="post">
             <p class="appointment-date">
-            <label class="number" for="child-max">
-              Взрослые:</label>
+              <label class="number" for="child-max">
+                Взрослые:</label>
 
               <button class="minus" for="child-max">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 2" fill="none">
-                  <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
-                  </svg>
               </button>
-          <input class="max" type="text" id="child-max" name="appointment-date" value="2">
-          <button class="plus" for="child-max">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
-              </svg>
-          </button>
+              <input class="max" type="text" id="child-max" name="appointment-date" value="2">
+              <button class="plus" for="child-max">
+              </button>
             </p>
-        <p class="appointments-date">
+            <p class="appointments-date">
 
-          <label class="numbers" for="child-min">
-            Дети:</label>
-
-            <button class="minus" for="child-min">
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 2" fill="none">
-                <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
-                </svg>
-            </button>
-        <input class="min" type="text" value="2" id="child-min" name="appointment-date">
-        <button class="plus" for="child-min">
-          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-            <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
-            </svg>
-        </button>
-      </p>
-    </form>
-    <button class="modal-button" type="submit">Найти</button>
-    <p class="info">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+              <label class="numbers" for="child-min">
+                Дети:</label>
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button">
+                  <svg class="toggle" xmlns="http://www.w3.org/2000/svg" width="2" height="12" viewBox="0 0 2 12"
+                    fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white" />
+                  </svg>
+                </button>
+              </span>
+              <button class="minus" for="child-min">
+              </button>
+              <input class="min" type="text" value="2" id="child-min" name="appointment-date">
+              <button class="plus" for="child-min">
+              </button>
+            </p>
+          </form>
+          <button class="modal-button" type="submit">Найти</button>
+          <span class="text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6
+            лет размещаются бесплатно.</span>
         </section>
       </div>
     </div>
