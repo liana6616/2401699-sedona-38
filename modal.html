@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
 
   <body>
@@ -192,6 +192,7 @@
       <div class="modal modal-auth" data-test="modal">
         <button class="modal-close-button" type="submit">
           <span class="visually-hidden">Закрыть</span>
+          <div class="close"></div>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
@@ -221,10 +222,12 @@
               <label class="number" for="child-max">
                 Взрослые:</label>
 
-              <button class="minus" for="child-max">
+              <button class="minus" for="child-max" type="button">
+                <div class="minus-button"></div>
               </button>
               <input class="max" type="text" id="child-max" name="appointment-date" value="2">
-              <button class="plus" for="child-max">
+              <button class="plus" for="child-max" type="button">
+                <div class="plus-button"></div>
               </button>
             </p>
             <p class="appointments-date">
@@ -237,18 +240,21 @@
                     fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white" />
                   </svg>
+                  <span class="text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6
+                    лет размещаются бесплатно.</span>
                 </button>
               </span>
-              <button class="minus" for="child-min">
+              <button class="minus" for="child-min" type="button">
+                <div class="minus-button"></div>
               </button>
               <input class="min" type="text" value="2" id="child-min" name="appointment-date">
-              <button class="plus" for="child-min">
+              <button class="plus" for="child-min" type="button">
+                <div class="plus-button"></div>
               </button>
             </p>
           </form>
           <button class="modal-button" type="submit">Найти</button>
-          <span class="text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6
-            лет размещаются бесплатно.</span>
+
         </section>
       </div>
     </div>
