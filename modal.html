@@ -26,15 +26,20 @@
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
-          <ul class="navigation-list navigation-user">
+          <ul class="navigation-list">
             <li class="navigation-search">
-              <a class="navigation-link" href="#"></a>
+              <a class="navigation-link-search" href="#"></a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link-like" href="#">
                 <span class="sum">12</span></a>
+            </li>
           </ul>
-          <a class="navigation-link-button" href="#">Хочу сюда!</a>
+          <ul class="overflow-button">
+            <li class="nav">
+              <a class="navigation-link-button" href="#">Хочу сюда!</a>
+            </li>
+          </ul>
         </nav>
       </header>
       <main data-test="main" class="main-container main">
@@ -203,7 +208,7 @@
                 Дата Заезда:</label>
 
 
-              <input class="departure" type="text" id="appointment" name="appointment-date" value="27 апреля 2020">
+              <input class="departure" type="text" id="appointment" name="appointment-date" placeholder="Укажите дату">
             </p>
             <p class="errore">Мы не можем отправить вас в прошлое.</p>
             <p class="appointment-form-date">
@@ -212,12 +217,11 @@
                 Дата Выезда:</label>
 
 
-              <input class="arrival-day" type="text" id="appointment-date" name="appointment-date"
-                value="1 сентября 2023">
+              <input class="arrival-day" type="text" id="appointment-date" name="appointment-date" placeholder="Укажите дату">
             </p>
             <p class="help">На эти даты есть свободные номера. Пока есть.</p>
           </form>
-          <form class="amount" method="post">
+          <form class="amount" action="https://echo.htmlacademy.ru/" method="post">
             <p class="appointment-date">
               <label class="number" for="child-max">
                 Взрослые:</label>
