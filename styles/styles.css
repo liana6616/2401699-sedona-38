@@ -218,7 +218,7 @@ body {
   justify-content: center;
   align-items: center;
   background: url("../images/mountains.png");
-  background-color: #FFF;
+  background-color: rgba(131, 179, 211, 0.20);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -512,6 +512,7 @@ li.advantages-item-block2:nth-of-type(3) {
   flex-direction: column;
   justify-content: center;
   background-image: url(../images/subscribe.png);
+  background-color: #3F5E72;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -686,7 +687,7 @@ li.advantages-item-block2:nth-of-type(3) {
 }
 .footer-contacts-address-phone:focus {
   color: #756157;
-  border: none;
+  border: transparent;
 }
 .footer-contacts-address-phone:active {
   color: rgba(117, 97, 87, 0.3);
@@ -727,6 +728,7 @@ li.advantages-item-block2:nth-of-type(3) {
   flex-direction: column;
   align-items: flex-start;
   background:  url("../images/catalog/filter.png");
+  background-color: #3F5E72;
   background-size: cover;
   background-repeat: no-repeat;
   box-sizing: border-box;
@@ -1084,7 +1086,7 @@ li.advantages-item-block2:nth-of-type(3) {
 }
 .button-light:active {
   color: rgba(255, 255, 255, 0.30);
-  border: none;
+  border: transparent;
 }
 .button-light:disabled {
   opacity: 0.1;
@@ -1547,7 +1549,7 @@ li.advantages-item-block2:nth-of-type(3) {
   border: 3px solid #83B3D3;
 }
 .modal-close-button:active {
-  border: none;
+  border: transparent;
 }
 .close:active {
   opacity: 0.3;
