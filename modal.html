@@ -210,7 +210,7 @@
                 Дата Заезда:</label>
 
 
-              <input class="departure" type="text" id="appointment" name="appointment-date" placeholder="Укажите дату">
+              <input class="departure" type="text" id="appointment" name="appointment-date" placeholder="Укажите дату" required>
             </p>
             <p class="errore">Мы не можем отправить вас в прошлое.</p>
             <p class="appointment-form-date">
@@ -219,7 +219,7 @@
                 Дата Выезда:</label>
 
 
-              <input class="arrival-day" type="text" id="appointment-date" name="appointment-date" placeholder="Укажите дату">
+              <input class="arrival-day" type="text" id="appointment-date" name="appointment-date" placeholder="Укажите дату" required>
             </p>
             <p class="help">На эти даты есть свободные номера. Пока есть.</p>
           </form>
@@ -228,16 +228,24 @@
               <label class="number" for="child-max">
                 Взрослые:</label>
 
-              <button class="minus" for="child-max" type="button">
-                <div class="minus-button"></div>
-              </button>
-              <input class="max" type="text" id="child-max" name="appointment-date" value="2">
-              <button class="plus" for="child-max" type="button">
-                <div class="plus-button"></div>
-              </button>
+
+                <div class="minus-button">
+                  <button class="minus" for="child-max" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2" fill="none">
+                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                    </svg>
+                  </button>
+                </div>
+              <input class="max" type="text" id="child-max" name="appointment-date" value="2" required>
+              <div class="plus-button">
+                <button class="plus" for="child-max" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                  </svg>
+                </button>
+              </div>
             </p>
             <p class="appointments-date">
-
               <label class="numbers" for="child-min">
                 Дети:</label>
               <span class="tooltip">
@@ -250,17 +258,26 @@
                     лет размещаются бесплатно.</span>
                 </button>
               </span>
+              <div class="minus-button">
               <button class="minus" for="child-min" type="button">
-                <div class="minus-button"></div>
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2" fill="none">
+                    <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                  </svg>
+
               </button>
-              <input class="min" type="text" value="2" id="child-min" name="appointment-date">
+            </div>
+              <input class="min" type="text" value="2" id="child-min" name="appointment-date" required>
+              <div class="plus-button">
               <button class="plus" for="child-min" type="button">
-                <div class="plus-button"></div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                  </svg>
               </button>
+            </div>
             </p>
           </form>
           <button class="modal-button" type="submit">Найти</button>
-
         </section>
       </div>
     </div>
