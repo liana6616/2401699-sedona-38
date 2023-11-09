@@ -10,7 +10,7 @@
 
   <body>
     <div class="page-container">
-      <header data-test="header" class="main-header">
+      <header class="main-header"data-test="header">
         <nav class="main-nav">
           <a class="logo" href="index.html" aria-current="page">
             <img src="images/logosedona.svg" width="140" height="70" alt="Логотип города Седона.">
@@ -42,7 +42,7 @@
           </ul>
         </nav>
       </header>
-      <main data-test="main" class="main-catalog-container main-catalog">
+      <main class="main-catalog-container main-catalog" data-test="main">
         <div class="header-catalog">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
@@ -70,11 +70,10 @@
             </li>
           </ul>
           <h2 class="visually-hidden">Блок фильтров</h2>
-          <form data-test="filter" class="form-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="form-filter" action="https://echo.htmlacademy.ru/" method="get" data-test="filter">
             <fieldset class="filter">
               <legend class="search-filter-title">Инфраструктура:</legend>
               <ul class="search-filter-list">
-
                 <li class="earch-filter-item">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="pool" checked>
@@ -155,7 +154,7 @@
             </div>
           </form>
         </div>
-        <section data-test="catalog" class="catalog">
+        <section class="catalog" data-test="catalog">
           <div class="search-filter">
             <h2 class="inner-header">Найдено гостиниц: 38</h2>
             <select class="sorting">
@@ -305,7 +304,7 @@
         <section class="subscription-two" data-test="subscribe">
           <h2 class="subscribe-title-link">Подпишитесь на рассылку</h2>
           <p class="subscribe-title-dark">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form action="https://echo.htmlacademy.ru/" method="post" class="email">
+          <form class="email" action="https://echo.htmlacademy.ru/" method="post">
             <p class="subscribe-form-name">
               <label for="newsletter-email" hidden>Email</label>
               <input class="field-email" type="email" placeholder="Ваш e-mail" name="newsletter-email"
@@ -315,7 +314,7 @@
           </form>
         </section>
       </main>
-      <footer data-test="footer" class="footer-page-container footer">
+      <footer class="footer-page-container footer" data-test="footer">
         <ul class="footer-social">
           <li class="footer-social-item footer-social-item-vk">
             <a class="button" href="https://vk.com/htmlacademy">
