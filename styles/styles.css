@@ -1974,7 +1974,7 @@ li.advantages-item-block2:nth-of-type(3) {
           box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.15);
 }
 .modal-content {
-  max-height: 448px;
+  min-height: 448px;
 }
 .modal-close-button {
   position: absolute;
