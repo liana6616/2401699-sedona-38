@@ -55,10 +55,12 @@
           </div>
           <ul class="advantages-list">
             <li class="advantages-item-block">
-              <h3 class="advantages-title-block">Настоящий городок</h3>
-              <p class="advantages-descripsion-block">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <div class="advantage-block">
+                <h3 class="advantages-title-block">Настоящий городок</h3>
+                <p class="advantages-descripsion-block">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
+              <img class="photo-house" src="images/city.jpg" alt="Фото природы города Седона.">
             </li>
-            <img class="photo-house" src="images/city.jpg" alt="Фото природы города Седона.">
             <li class="advantages-item-block2">
               <h3 class="advantages-title">Небольшая площадь</h3>
               <p class="advantages-descripsion">Все достопримечательности находятся очень близко</p>
@@ -71,10 +73,12 @@
               <h3 class="advantages-title">Мало туристов</h3>
               <p class="advantages-descripsion">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
-            <img class="photo" src="images/crag.jpg" alt="Фото моста Дьявола города Седона.">
             <li class="advantages-item-block">
-              <h3 class="advantages-title-block">Там есть <br> мост Дьявола</h3>
-              <p class="advantages-descripsion-block">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              <img class="photo" src="images/crag.jpg" alt="Фото моста Дьявола города Седона.">
+              <div class="advantage-block">
+                <h3 class="advantages-title-block">Там есть <br> мост Дьявола</h3>
+                <p class="advantages-descripsion-block">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              </div>
             </li>
           </ul>
         </section>
@@ -85,18 +89,18 @@
               <h4 class="advantage-cause">Опытный персонал и качественное обслуживание!</h4>
             </li>
             <li class="advantages-item-block3">
-              <img src="images/home.svg" width="75" height="76" alt="Изображение дома.">
+              <img src="images/home.svg" width="75" height="72" alt="Изображение дома.">
               <h3 class="advantages-titles">Жильё</h3>
               <p class="advantages-descripsions">Рекомендуем пожить <br> в настоящем мотеле, <br> всё как в кино!</p>
             </li>
             <li class="advantages-item-block2">
-              <img src="images/food.svg" width="75" height="76" alt="Изображение бургера.">
+              <img src="images/food.svg" width="75" height="72" alt="Изображение бургера.">
               <h3 class="advantages-titles">Еда</h3>
               <p class="advantages-descripsions">Всегда заказывайте <br> топовый фирменный бургер, <br> вы не
                 разочаруетесь!</p>
             </li>
             <li class="advantages-item-block3">
-              <img src="images/present.svg" width="75" height="76" alt="Изображение подарка.">
+              <img src="images/present.svg" width="75" height="72" alt="Изображение подарка.">
               <h3 class="advantages-titles">Сувениры</h3>
               <p class="advantages-descripsions">Не только китайского, <br> но и настоящего местного <br> производства!
               </p>
@@ -203,7 +207,7 @@
       <div class="modal modal-auth" data-test="modal">
         <button class="modal-close-button" type="submit">
           <span class="visually-hidden">Закрыть</span>
-          <div class="close"></div>
+          <span class="close"></span>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
@@ -214,7 +218,8 @@
                 Дата Заезда:</label>
 
 
-              <input class="departure" type="text" id="appointment" name="appointment-date" placeholder="Укажите дату" required>
+              <input class="departure" type="text" id="appointment" name="appointment-date" placeholder="Укажите дату"
+                required>
             </p>
             <p class="errore">Мы не можем отправить вас в прошлое.</p>
             <p class="appointment-form-date">
@@ -223,35 +228,36 @@
                 Дата Выезда:</label>
 
 
-              <input class="arrival-day" type="text" id="appointment-date" name="appointment-date" placeholder="Укажите дату" required>
+              <input class="arrival-day" type="text" id="appointment-date" name="appointment-date"
+                placeholder="Укажите дату" required>
             </p>
             <p class="help">На эти даты есть свободные номера. Пока есть.</p>
           </form>
           <form class="amount" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="appointment-date">
+            <div class="appointment-date">
               <label class="number" for="child-max">
                 Взрослые:</label>
 
 
-                <div class="minus-button">
-                  <button class="minus" for="child-max" type="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2" fill="none" role="img"
-                    aria-label="Кнопка минус.">
-                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
-                    </svg>
-                  </button>
-                </div>
-              <input class="max" type="text" id="child-max" name="appointment-date" value="2" required>
-              <div class="plus-button">
-                <button class="plus" for="child-max" type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none" role="img"
-                  aria-label="Кнопка плюс.">
-                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+              <div class="minus-button">
+                <button class="minus" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2" fill="none" role="img"
+                     aria-label="Кнопка минус.">
+                    <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
                   </svg>
                 </button>
               </div>
-            </p>
-            <p class="appointments-date">
+              <input class="max" type="text" id="child-max" name="appointment-date" value="2" required>
+              <div class="plus-button">
+                <button class="plus" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                    role="img" aria-label="Кнопка плюс.">
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="appointments-date">
               <label class="numbers" for="child-min">
                 Дети:</label>
               <span class="tooltip">
@@ -260,30 +266,31 @@
                     fill="none" role="img" aria-label="Подсказка.">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white" />
                   </svg>
-                  <span class="text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6
+                  <span class="text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
+                    Дети до 6
                     лет размещаются бесплатно.</span>
                 </button>
               </span>
               <div class="minus-button">
-              <button class="minus" for="child-min" type="button">
+                <button class="minus" type="button">
 
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2" fill="none" role="img"
-                  aria-label="Кнопка минус.">
-                    <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                    aria-label="Кнопка минус.">
+                    <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
                   </svg>
 
-              </button>
-            </div>
+                </button>
+              </div>
               <input class="min" type="text" value="2" id="child-min" name="appointment-date" required>
               <div class="plus-button">
-              <button class="plus" for="child-min" type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none" role="img"
-                  aria-label="Кнопка плюс.">
-                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                <button class="plus" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                    role="img" aria-label="Кнопка плюс.">
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
                   </svg>
-              </button>
+                </button>
+              </div>
             </div>
-            </p>
           </form>
           <button class="modal-button" type="submit">Найти</button>
         </section>
