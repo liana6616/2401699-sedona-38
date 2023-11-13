@@ -153,6 +153,15 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+.navigation-link-search:hover {
+  opacity: 0.2;
+}
+.navigation-link-search:focus {
+  opacity: 0.3;
+}
+.navigation-link-search:active {
+  opacity: 0.2;
+}
 .navigation-link-current::before {
   position: absolute;
   right: 16px;
@@ -204,6 +213,15 @@ body {
   background: url(../images/like.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+.navigation-link-like:hover {
+  opacity: 0.2;
+}
+.navigation-link-like:focus {
+  opacity: 0.3;
+}
+.navigation-link-like:hover {
+  opacity: 0.2;
 }
 .sum {
   position: absolute;
