@@ -381,6 +381,26 @@ body {
   padding: 0px;
 }
 .advantage-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 400px;
+  min-height: 385px;
+  padding: 80px 85px;
+}
+.advantage-block1 {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1695,13 +1715,13 @@ li.advantages-item-block2:nth-of-type(3) {
   color: #FFF;
   background: #7DB54F;
 }
-.catalog-card-button-favorite:hover {
+.color:hover {
   background: #6C9E42;
 }
-.catalog-card-button-favorite:focus{
+.color:focus{
   background: #6C9E42;
 }
-.catalog-card-button-favorite:active {
+.color:active {
   background: #7DB54F;
   color: rgba(255, 255, 255, 0.30);
 }
