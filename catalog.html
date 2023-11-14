@@ -48,7 +48,7 @@
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link-home" href="index.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 13 13" fill="none"
                   role="img" aria-label="Главная страница.">
                   <path
                     d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z"
@@ -56,16 +56,6 @@
                   <path d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" fill="white" />
                 </svg>
               </a>
-            </li>
-            <li class="breadcrumbs-item">
-              <p class="bread-crumbs">
-                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="11" viewBox="0 0 8 11" fill="none" role="img"
-                  aria-label="Актуальная страница.">
-                  <path
-                    d="M6.91526 4.96875L2.16526 0.71875C1.91526 0.46875 1.41526 0.46875 1.04026 0.71875C0.665263 0.96875 0.790263 1.46875 1.04026 1.71875L5.16526 5.46875L1.16526 9.21875C0.915263 9.46875 0.915263 9.96875 1.16526 10.2188C1.16526 10.3438 1.54026 10.4688 1.66526 10.4688C1.79026 10.4688 2.04026 10.3438 2.16526 10.2188L6.91526 5.96875C7.29026 5.71875 7.29026 5.21875 6.91526 4.96875Z"
-                    fill="white" />
-                </svg>
-              </p>
             </li>
             <li class="breadcrumbs-item">
               <a class="breadcrumb-link" href="#">Гостиницы</a>
@@ -141,7 +131,7 @@
                 </div>
                 <div class="price-two">
                   <label class="of">до</label>
-                  <input class="field-of" type="text" name="price" value="9000" id="price_of" required>
+                  <input class="field-of" type="text" name="price" value="9000" min="0" max="9000" step="1" id="price_of" required>
                 </div>
               </div>
               <div class="button-price">
@@ -151,8 +141,8 @@
               </div>
             </fieldset>
             <div class="button-filter">
-              <button class="button button-dark" type="button">Применить</button>
-              <button class="button button-light" type="button">Сбросить</button>
+              <button class="button button-dark" type="submit">Применить</button>
+              <button class="button button-light" type="reset">Сбросить</button>
             </div>
           </form>
         </div>
@@ -165,40 +155,15 @@
               <option value="expensive">Сначала дорогое</option>
             </select>
             <div class="review">
-              <a class="button-list-pictures" href="#">
+              <button class="button-list-pictures button-pictures image-pictures" type="button">
                 <span class="visually-hidden">Показать карточки</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 16 14" fill="none"
-                  role="img" aria-label="Много карточек.">
-                  <path d="M4 0H0V6H4V0Z" fill="black" />
-                  <path d="M16 0H12V6H16V0Z" fill="black" />
-                  <path d="M10 0H6V6H10V0Z" fill="black" />
-                  <path d="M4 8H0V14H4V8Z" fill="black" />
-                  <path d="M16 8H12V14H16V8Z" fill="black" />
-                  <path d="M10 8H6V14H10V8Z" fill="black" />
-                </svg>
-              </a>
-              <a class="button-list-picture" href="#">
+              </button>
+              <button class="button-list-pictures image-picture" type="button">
                 <span class="visually-hidden">Показать карточку</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 16 14" fill="none"
-                  role="img" aria-label="Одна карточка.">
-                  <path d="M16 12H0V14H16V12Z" fill="black" />
-                  <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black" />
-                </svg>
-              </a>
-              <a class="button-list-list" href="#">
+              </button>
+              <button class="button-list-pictures image-list" type="button">
                 <span class="visually-hidden">Показать список</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 16 14" fill="none"
-                  role="img" aria-label="Список карточек.">
-                  <path d="M2 0H0V2H2V0Z" fill="black" />
-                  <path d="M16 0H4V2H16V0Z" fill="black" />
-                  <path d="M2 4H0V6H2V4Z" fill="black" />
-                  <path d="M16 4H4V6H16V4Z" fill="black" />
-                  <path d="M2 8H0V10H2V8Z" fill="black" />
-                  <path d="M16 8H4V10H16V8Z" fill="black" />
-                  <path d="M2 12H0V14H2V12Z" fill="black" />
-                  <path d="M16 12H4V14H16V12Z" fill="black" />
-                </svg>
-              </a>
+              </button>
             </div>
           </div>
           <ul class="catalog-list">
@@ -212,14 +177,14 @@
                 <p class="price-name">Гостиница</p>
                 <p class="price-from">От 4000 ₽</p>
                 <a class="catalog-card-button-details" href="#">Подробнее</a>
-                <a class="catalog-card-button-favorites" href="#">В избранное</a>
+                <button class="catalog-card-button-favorites" type="submit">В избранное</button>
                 <div class="rating-results">
                   <span class="visually-rating"></span>
                   <span class="visually-rating"></span>
                   <span class="visually-rating"></span>
                   <span class="visually-rating"></span>
                 </div>
-                <a class="rating-result" href="#">Рейтинг: 8,5</a>
+                <span class="rating-result">Рейтинг: 8,5</span>
               </div>
             </li>
             <li class="catalog-card">
@@ -232,14 +197,14 @@
                 <p class="price-name">Гостиница</p>
                 <p class="price-from">От 5000 ₽</p>
                 <a class="catalog-card-button-details" href="#">Подробнее</a>
-                <a class="catalog-card-button-favorite" href="#">В избранном</a>
+                <button class="catalog-card-button-favorites color" type="submit">В избранном</button>
                 <div class="rating-results">
                   <span class="visually-rating"></span>
                   <span class="visually-rating"></span>
                   <span class="visually-rating"></span>
                   <span class="visually-rating"></span>
                 </div>
-                <a class="rating-result" href="#">Рейтинг: 9,2</a>
+                <span class="rating-result">Рейтинг: 9,2</span>
               </div>
             </li>
             <li class="catalog-card">
@@ -252,13 +217,13 @@
                 <p class="price-name">Гостиница</p>
                 <p class="price-from">От 2500 ₽</p>
                 <a class="catalog-card-button-details" href="#">Подробнее</a>
-                <a class="catalog-card-button-favorites" href="#">В избранное</a>
+                <button class="catalog-card-button-favorites" type="submit">В избранное</button>
                 <div class="rating-results">
                   <span class="visually-rating"></span>
                   <span class="visually-rating"></span>
                   <span class="visually-rating"></span>
                 </div>
-                <a class="rating-result" href="#">Рейтинг: 6,9</a>
+                <span class="rating-result">Рейтинг: 6,9</span>
               </div>
             </li>
             <li class="catalog-card">
@@ -271,19 +236,19 @@
                 <p class="price-name">Гостиница</p>
                 <p class="price-from">От 1500 ₽</p>
                 <a class="catalog-card-button-details" href="#">Подробнее</a>
-                <a class="catalog-card-button-favorites" href="#">В избранное</a>
+                <button class="catalog-card-button-favorites" type="submit">В избранное</button>
                 <div class="rating-results">
                   <span class="visually-rating"></span>
                   <span class="visually-rating"></span>
                 </div>
-                <a class="rating-result" href="#">Рейтинг: 5,0</a>
+                <span class="rating-result">Рейтинг: 5,0</span>
               </div>
             </li>
           </ul>
           <span class="pol"></span>
           <ul class="pagination">
             <li class="pagination-item">
-              <a class="pagination-current-one">1</a>
+              <a class="pagination-current pagination-current-one">1</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-current" href="#">2</a>
@@ -295,7 +260,7 @@
               <a class="pagination-current" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-current-one" href="#">...</a>
+              <a class="pagination-current pagination-current-one" href="#">...</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-current" href="#">10</a>

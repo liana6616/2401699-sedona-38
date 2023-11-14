@@ -205,7 +205,7 @@
     </div>
     <div class="modal-container">
       <div class="modal modal-auth" data-test="modal">
-        <button class="modal-close-button" type="submit">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
           <span class="close"></span>
         </button>
@@ -231,9 +231,7 @@
               <input class="arrival-day" type="text" id="appointment-date" name="appointment-date"
                 placeholder="Укажите дату" required>
             </p>
-            <p class="help">На эти даты есть свободные номера. Пока есть.</p>
-          </form>
-          <form class="amount" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="errore">На эти даты есть свободные номера. Пока есть.</p>
             <div class="appointment-date">
               <label class="number" for="child-max">
                 Взрослые:</label>
@@ -256,8 +254,6 @@
                   </svg>
                 </button>
               </div>
-            </div>
-            <div class="appointments-date">
               <label class="numbers" for="child-min">
                 Дети:</label>
               <span class="tooltip">
