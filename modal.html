@@ -28,10 +28,13 @@
           </ul>
           <ul class="navigation-list">
             <li class="navigation-search">
-              <a class="navigation-link-search" href="#"></a>
+              <a class="navigation-link-search" href="#">
+              <span class="visually-hidden">Поиск.</span>
+              </a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link-like" href="#">
+                <span class="visually-hidden">Избранное.</span>
                 <span class="sum">12</span></a>
             </li>
           </ul>
@@ -203,7 +206,6 @@
       <div class="modal modal-auth" data-test="modal">
         <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
-          <span class="close"></span>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
@@ -241,7 +243,7 @@
                   </svg>
                 </button>
               </div>
-              <input class="max" type="text" id="child-max" name="appointment-date" value="2" required>
+              <input class="max" type="number" id="child-max" name="appointment-date" value="2" placeholder="2" required>
               <div class="plus-button">
                 <button class="plus" type="button">
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
@@ -273,7 +275,7 @@
 
                 </button>
               </div>
-              <input class="min" type="text" value="2" id="child-min" name="appointment-date" required>
+              <input class="min" type="number" value="2" id="child-min" name="appointment-date" placeholder="2" required>
               <div class="plus-button">
                 <button class="plus" type="button">
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
