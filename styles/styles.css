@@ -2164,19 +2164,10 @@ a.pagination-current.pagination-current-one {
   top: 64px;
   width: 52px;
   height: 52px;
-  padding: 0px;
+  padding: 5px 0px 0px 1px;
   border: none;
   background-color: #f2f2f2;
   border-radius: 100px;
-}
-
-.modal-close-button::before {
-  display: flex;
-  content: "";
-  margin-left: 1px;
-  height: 20px;
-  background: url("../images/modal/cross.svg") no-repeat;
-  background-position: center;
 }
 
 .modal-close-button:hover {
@@ -2190,10 +2181,7 @@ a.pagination-current.pagination-current-one {
 
 .modal-close-button:active {
   border: transparent;
-}
-
-.modal-close-button::before:active {
-  opacity: 0.3;
+  fill-opacity: 0.3;
 }
 
 .modal-title {
