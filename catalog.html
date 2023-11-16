@@ -127,17 +127,23 @@
               <legend class="search-filter-title">Стоимость, ₽:</legend>
               <div class="fix-price">
                 <div class="price-one">
-                  <label class="do">от</label>
+                  <label class="do" for="price_do">от
+                    <span class="visually-hidden">Минимальная цена.</span>
+                  </label>
                   <input class="field-do" type="number" name="price" value="0" id="price_do" required>
                 </div>
                 <div class="price-two">
-                  <label class="of">до</label>
+                  <label class="of" for="price_of">до
+                    <span class="visually-hidden">Максимальная цена.</span>
+                  </label>
                   <input class="field-of" type="number" name="price" value="9000" id="price_of" required>
                 </div>
               </div>
               <div class="button-price">
-                <button class="button-min" type="button"></button>
-                <button class="button-two" type="button"></button>
+                <button class="button-min" type="button">
+                </button>
+                <button class="button-two" type="button">
+                </button>
                 <div class="range"></div>
               </div>
             </fieldset>
